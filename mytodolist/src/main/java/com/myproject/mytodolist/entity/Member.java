@@ -17,15 +17,17 @@ import java.util.List;
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")
-    private Long id;
+    private Long memberId;
 
+    // 로그인id로 사용
     private String nickname;
     private String password;
     private String email;
     private String phone;
     private String name;
 
-    private String profileImg; // 프로필사진
+    @OneToOne(mappedBy = "member")
+    private ProfileImg profileImg;
     //유저가 가지고있는 plan들
     @OneToMany(mappedBy = "member")
     List<Plan> planList = new ArrayList<>();

@@ -18,7 +18,7 @@ import java.util.List;
 @Table(name = "plan")
 public class Plan {
     @Id @GeneratedValue @Column(name = "plan_id")
-    private Long id;
+    private Long planId;
 
     @CreationTimestamp
     private Date planDay; // 게획을 만든 날

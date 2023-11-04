@@ -27,5 +27,5 @@ public class Todo {
 
     @ManyToOne @JoinColumn(name = "plan_id")
     private Plan plan;
-
+    
 }
