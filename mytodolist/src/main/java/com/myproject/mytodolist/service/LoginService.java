@@ -1,7 +1,7 @@
 package com.myproject.mytodolist.service;
 
 import com.myproject.mytodolist.dto.MemberRequestDTO;
-import org.springframework.stereotype.Service;
 
-public interface MemberService {
+public interface LoginService {
+    public void register(MemberRequestDTO requestDTO);
 }
