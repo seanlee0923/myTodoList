@@ -1,6 +1,7 @@
 package com.myproject.mytodolist.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,6 +15,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "member")
+@Builder
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")
